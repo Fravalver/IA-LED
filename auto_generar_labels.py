@@ -51,7 +51,7 @@ for archivo in os.listdir(carpeta_imagenes):
                 cajas.append((x, y, an, al))
 
         yolo_lineas = []
-        if centros:
+        if len(centros) > 0:  # Verificar si hay elementos en el array
             centros = np.array(centros)
             medidas = np.array([[an, al] for (_, _, an, al) in cajas])
             area_leds = medidas[:, 0] * medidas[:, 1]  # Área en píxeles cuadrados
@@ -137,4 +137,9 @@ for archivo in os.listdir(carpeta_imagenes):
 
         input("Presiona Enter para continuar...")
 
+
+# git status
+# git add .
+# git commit -m "Descripción de los cambios"
+# git push
 
