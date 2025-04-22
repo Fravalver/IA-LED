@@ -1,0 +1,5 @@
+train: C:/Users/franklin.fajarado/Desktop/proyecto_led/dataset/images/train
+val: C:/Users/franklin.fajarado/Desktop/proyecto_led/dataset/images/train
+nc: 1
+names:
+  0: led_encendido
